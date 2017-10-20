@@ -2,13 +2,14 @@ import { IApplication } from 'b.app/common/interfaces/application'
 import { IIndexable } from '../common/interfaces/decorators'
 import { ILogger, Logger } from '../common/interfaces/loggers'
 
-import { BaseProvider } from './BaseProvider'
 import * as debug from 'debug'
 import { NotImplementedError } from '../common/errors/NotImplementedError'
+import { BaseProvider } from './BaseProvider'
 
 abstract class BaseLogger <T> extends BaseProvider implements ILogger <T> {
   [key: string]: T|Logger|any
 
+  // tslint:disable-next-line:variable-name
   __loggers: IIndexable<T>
 
   constructor (application: IApplication, config: any) {
