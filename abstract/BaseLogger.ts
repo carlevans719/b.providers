@@ -1,6 +1,6 @@
-import { IApplication } from 'b.app/common/interfaces/application'
+import { IApplication } from '@webantic/w.app/common/interfaces/application'
 import { IIndexable } from '../common/interfaces/decorators'
-import { ILogger, Logger } from '../common/interfaces/loggers'
+import { ILogger, Logger } from '../common/interfaces/logger'
 
 import * as debug from 'debug'
 import { NotImplementedError } from '../common/errors/NotImplementedError'

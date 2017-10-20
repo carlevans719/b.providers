@@ -1,4 +1,4 @@
-import { IApplication } from 'b.app/common/interfaces/application'
+import { IApplication } from '@webantic/w.app/common/interfaces/application'
 import { IIndexable } from '../common/interfaces/decorators'
 
 import { IDatabase } from 'common/interfaces/database';

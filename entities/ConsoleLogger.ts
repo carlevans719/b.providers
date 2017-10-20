@@ -1,5 +1,5 @@
-import { IApplication } from 'b.app/common/interfaces/application'
-import { ILogger, Logger } from '../common/interfaces/loggers'
+import { IApplication } from '@webantic/w.app/common/interfaces/application'
+import { ILogger, Logger } from '../common/interfaces/logger'
 
 import { BaseLogger } from '../abstract/BaseLogger'
 import { LogLevelConflictError } from '../common/errors/LogLevelConflictError'

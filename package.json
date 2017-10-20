@@ -1,7 +1,7 @@
 {
-  "name": "w.providers",
+  "name": "@webantic/w.providers",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of feature providers to bootstrap your app",
   "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlevans719/b.providers.git"
+    "url": "git+https://github.com/webantic/w.providers.git"
+  },  
+  "author": {
+    "email": "carl@webantic.co.uk",
+    "name": "Webantic (Carl Evans)",
+    "url": "https://webantic.co.uk"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/carlevans719/b.providers/issues"
+    "url": "https://github.com/webantic/w.providers/issues"
   },
-  "homepage": "https://github.com/carlevans719/b.providers#readme",
+  "homepage": "https://github.com/webantic/w.providers#readme",
   "dependencies": {
     "@types/debug": "0.0.30",
     "@types/node": "^8.0.46",
