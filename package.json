@@ -1,8 +1,8 @@
 {
-  "name": "b.providers",
+  "name": "w.providers",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
@@ -21,12 +21,11 @@
   "dependencies": {
     "@types/debug": "0.0.30",
     "@types/node": "^8.0.46",
-    "b.app": "1.0.0",
-    "debug": "^3.1.0",
-    "tslint-config-standard": "^6.0.1"
+    "debug": "^3.1.0"
   },
   "devDependencies": {
     "tslint": "^5.7.0",
+    "tslint-config-standard": "^6.0.1",
     "tslint-eslint-rules": "^4.1.1",
     "typescript": "^2.5.3"
   }
