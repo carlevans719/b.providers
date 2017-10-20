@@ -1,0 +1,30 @@
+{
+  "name": "b.providers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlevans719/b.providers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlevans719/b.providers/issues"
+  },
+  "homepage": "https://github.com/carlevans719/b.providers#readme",
+  "dependencies": {
+    "@types/debug": "0.0.30",
+    "@types/node": "^8.0.46",
+    "b.app": "1.0.0",
+    "debug": "^3.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^2.5.3"
+  }
+}
