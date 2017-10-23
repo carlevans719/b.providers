@@ -21,7 +21,7 @@ class ConsoleLogger extends BaseLogger <Logger> implements ILogger <Logger> {
   constructor (application: IApplication, config: any) {
     super(application, config)
 
-    this.namespace = config ? config.namespace : this.__application.name
+    this.namespace = config && config.namespace ? config.namespace : this.__application.name
     this.logLevels = [
       'trace',
       'info',

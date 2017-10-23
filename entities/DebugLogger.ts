@@ -22,7 +22,7 @@ class DebugLogger extends BaseLogger <debug.IDebugger> implements ILogger <debug
   constructor (application: IApplication, config: any) {
     super(application, config)
 
-    this.namespace = config ? config.namespace : this.__application.name
+    this.namespace = config && config.namespace ? config.namespace : this.__application.name
     this.logLevels = [
       'trace',
       'info',
