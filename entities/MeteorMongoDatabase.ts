@@ -1,5 +1,6 @@
 import { IApplication } from '@webantic/w.interfaces/application'
-import { IDatabase } from '@webantic/w.interfaces/databases'
+import { IDatabase, IDatabaseModel } from '@webantic/w.interfaces/databases'
+import { IIndexable } from '@webantic/w.interfaces/decorators'
 import * as Mongo from 'meteor/mongo'
 
 import { BaseDatabase } from '../abstract/BaseDatabase'
@@ -15,7 +16,8 @@ class MeteorMongoDatabase extends BaseDatabase <any> implements IDatabase <any> 
 
     this.__raw = config.mongo
 
-    this.Model = config.mongo.Collection
+    this.__Model = config.mongo.Collection
+    this.__models = {}
   }
 }
 
