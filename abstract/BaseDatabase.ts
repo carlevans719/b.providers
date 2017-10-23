@@ -10,21 +10,9 @@ abstract class BaseDatabase <T> extends BaseProvider implements IDatabase <T> {
 
   static groupName: string = 'database'
 
-  get __raw () {
-    throw new NotImplementedError()
-  }
-
-  set __raw (data) {
-    this.__raw = data
-  }
-
-  get Model (): IDatabaseModel<T> {
-    throw new NotImplementedError()
-  }
-
-  set Model (data) {
-    this.Model = data
-  }
+  // tslint:disable-next-line:variable-name
+  __raw?: any
+  Model: IDatabaseModel<T>
 }
 
 export {
