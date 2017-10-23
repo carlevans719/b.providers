@@ -1,5 +1,5 @@
-import { IApplication } from '@webantic/w.app/common/interfaces/application'
-import { IProvider } from '@webantic/w.app/common/interfaces/provider'
+import { IApplication } from '@webantic/w.interfaces/application'
+import { IProvider } from '@webantic/w.interfaces/providers'
 
 import { NotImplementedError } from '../common/errors/NotImplementedError'
 

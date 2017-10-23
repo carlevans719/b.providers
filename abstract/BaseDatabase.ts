@@ -1,7 +1,7 @@
-import { IApplication } from '@webantic/w.app/common/interfaces/application'
-import { IIndexable } from '../common/interfaces/decorators'
+import { IApplication } from '@webantic/w.interfaces/application'
+import { IDatabase, IDatabaseModel } from '@webantic/w.interfaces/databases'
+import { IIndexable } from '@webantic/w.interfaces/decorators'
 
-import { IDatabase, IDatabaseModel } from 'common/interfaces/database';
 import { NotImplementedError } from '../common/errors/NotImplementedError'
 import { BaseProvider } from './BaseProvider'
 

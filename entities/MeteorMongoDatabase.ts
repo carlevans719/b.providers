@@ -1,6 +1,6 @@
-import { IApplication } from '@webantic/w.app/common/interfaces/application'
+import { IApplication } from '@webantic/w.interfaces/application'
+import { IDatabase } from '@webantic/w.interfaces/databases'
 import * as Mongo from 'meteor/mongo'
-import { IDatabase } from '../common/interfaces/database'
 
 import { BaseDatabase } from '../abstract/BaseDatabase'
 import { MissingParameterError } from '../common/errors/MissingParameterError'
