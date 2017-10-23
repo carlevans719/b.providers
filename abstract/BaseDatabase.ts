@@ -38,6 +38,10 @@ abstract class BaseDatabase <T> extends BaseProvider implements IDatabase <T> {
       }
     }
   }
+
+  getModel (name: string, options?: any): IDatabaseModel<T> {
+    throw new NotImplementedError()
+  }
 }
 
 export {

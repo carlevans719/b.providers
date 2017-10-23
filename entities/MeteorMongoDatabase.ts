@@ -5,6 +5,7 @@ import * as Mongo from 'meteor/mongo'
 
 import { BaseDatabase } from '../abstract/BaseDatabase'
 import { MissingParameterError } from '../common/errors/MissingParameterError'
+import { required as r } from '../common/decorators/parameters'
 
 class MeteorMongoDatabase extends BaseDatabase <any> implements IDatabase <any> {
   constructor (application: IApplication, config: any) {
@@ -18,6 +19,18 @@ class MeteorMongoDatabase extends BaseDatabase <any> implements IDatabase <any> 
 
     this.__Model = config.mongo.Collection
     this.__models = {}
+  }
+
+  getModel (modelName: string = r('modelName'), options?: any) {
+    if (!this.__models[modelName]) {
+      if (this.__Model === undefined) {
+        throw new MissingParameterError('__Model')
+      }
+
+      this.__models[modelName] = new this.__Model(modelName, options)
+    }
+    
+    return this.__models[modelName]
   }
 }
 
