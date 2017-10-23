@@ -9,6 +9,8 @@ import { BaseProvider } from './BaseProvider'
 abstract class BaseLogger <T> extends BaseProvider implements ILogger <T> {
   [key: string]: T|Logger|any
 
+  static groupName: string = 'logger'
+
   // tslint:disable-next-line:variable-name
   __loggers: IIndexable<T>
 

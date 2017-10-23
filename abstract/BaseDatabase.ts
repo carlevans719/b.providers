@@ -8,6 +8,8 @@ import { BaseProvider } from './BaseProvider'
 abstract class BaseDatabase <T> extends BaseProvider implements IDatabase <T> {
   [key: string]: T|any
 
+  static groupName: string = 'database'
+
   get __raw () {
     throw new NotImplementedError()
   }
