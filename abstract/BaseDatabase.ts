@@ -12,8 +12,16 @@ abstract class BaseDatabase <T> extends BaseProvider implements IDatabase <T> {
     throw new NotImplementedError()
   }
 
+  set __raw (data) {
+    this.__raw = data
+  }
+
   get Model (): IDatabaseModel<T> {
     throw new NotImplementedError()
+  }
+
+  set Model (data) {
+    this.Model = data
   }
 }
 

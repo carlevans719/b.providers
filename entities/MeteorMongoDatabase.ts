@@ -12,7 +12,10 @@ class MeteorMongoDatabase extends BaseDatabase <any> implements IDatabase <any> 
     if (!config || !config.mongo) {
       throw new MissingParameterError('config.')
     }
-    this.Mongo = config.mongo
+
+    this.__raw = config.mongo
+
+    this.Model = config.mongo.Collection
   }
 }
 
