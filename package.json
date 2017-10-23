@@ -26,6 +26,7 @@
   "homepage": "https://github.com/webantic/w.providers#readme",
   "dependencies": {
     "@types/debug": "0.0.30",
+    "@types/meteor": "^1.4.11",
     "@types/node": "^8.0.46",
     "@webantic/w.app": "^1.0.1",
     "debug": "^3.1.0"
