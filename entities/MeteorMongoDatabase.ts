@@ -19,6 +19,4 @@ class MeteorMongoDatabase extends BaseDatabase <any> implements IDatabase <any> 
   }
 }
 
-export {
-  MeteorMongoDatabase
-}
+export default MeteorMongoDatabase
